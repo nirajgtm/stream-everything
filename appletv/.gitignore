@@ -1,0 +1,6 @@
+Frameworks/
+build/
+StreamEverything.xcodeproj/
+StreamEverything/Sources/Credentials.swift
+build-sim/
+build-*/

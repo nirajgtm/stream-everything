@@ -1,0 +1,13 @@
+.gradle/
+build/
+local.properties
+xtream.properties
+
+# Rollback APK artifacts (large binaries, kept locally only)
+rollback/
+
+# Per-person Xtream credentials (local only, never committed)
+build-profiles/
+
+# Provider catalog dumps used for local analysis (never published)
+analysis/bins/

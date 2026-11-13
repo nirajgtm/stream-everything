@@ -1,0 +1,39 @@
+name: StreamEverything
+options:
+  bundleIdPrefix: com.nirajgtm
+  deploymentTarget:
+    tvOS: "17.0"
+  xcodeVersion: "26.5"
+settings:
+  base:
+    DEVELOPMENT_TEAM: WL345Y4UJ7
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.9"
+targets:
+  StreamEverything:
+    type: application
+    platform: tvOS
+    sources:
+      - path: StreamEverything/Sources
+      - path: StreamEverything/Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nirajgtm.xtreamtv.tv
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: 1
+        GENERATE_INFOPLIST_FILE: true
+        INFOPLIST_KEY_CFBundleDisplayName: Stream Everything
+        INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads: true
+        INFOPLIST_KEY_UILaunchScreen_Generation: true
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks"
+        ENABLE_BITCODE: false
+        ASSETCATALOG_COMPILER_APPICON_NAME: "App Icon & Top Shelf Image"
+    dependencies:
+      - framework: Frameworks/TVVLCKit-binary/TVVLCKit.xcframework
+        embed: true
+    info:
+      path: StreamEverything/Info.plist
+      properties:
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+        UILaunchScreen: {}
